@@ -51,19 +51,7 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.openjfx</groupId>
-                <artifactId>javafx-maven-plugin</artifactId>
-                <version>0.0.7</version>
-                <executions>
-                    <execution>
-                        <id>default-cli</id>
-                        <configuration>
-                            <mainClass>com.example.todolist/com.example.todolist.Application</mainClass>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+           
             <plugin>
                 <groupId>com.heroku.sdk</groupId>
                 <artifactId>heroku-maven-plugin</artifactId>
