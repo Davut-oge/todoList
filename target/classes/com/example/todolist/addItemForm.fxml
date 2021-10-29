@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #f3e5f5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddItemFormController">
+   <children>
+      <AnchorPane fx:id="rootAnchorPane" prefHeight="79.0" prefWidth="700.0" style="-fx-background-color: #9c27b0;">
+         <children>
+            <Label alignment="CENTER" layoutX="291.0" layoutY="24.0" prefHeight="17.0" prefWidth="118.0" text="2DO" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="successLabel" layoutX="14.0" layoutY="51.0" prefHeight="17.0" prefWidth="167.0" text="Task Added Successfully!" textFill="WHITE" visible="false" />
+         </children>
+      </AnchorPane>
+      <TextField fx:id="taskField" layoutX="127.0" layoutY="125.0" prefHeight="65.0" prefWidth="451.0" promptText="Task">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="descriptionField" layoutX="127.0" layoutY="211.0" prefHeight="65.0" prefWidth="451.0" promptText="Description">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="saveTaskButton" layoutX="295.0" layoutY="304.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="114.0" style="-fx-background-color: #9c27b0;" text="Save Task" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="todosButton" layoutX="526.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" style="-fx-background-color: #9c27b0;" text="My 2DO's (3)" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

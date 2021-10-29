@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootAnchorPane" prefHeight="80.0" prefWidth="400.0" style="-fx-background-color: #f3e7f6;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="iconImageView" fitHeight="39.0" fitWidth="38.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_task.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.44" contrast="-0.45" />
+         </effect>
+      </ImageView>
+      <Label fx:id="taskLabel" layoutX="39.0" layoutY="4.0" prefHeight="17.0" prefWidth="264.0" text="Task">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="descriptionLabel" layoutX="39.0" layoutY="25.0" prefHeight="31.0" prefWidth="302.0" style="-fx-background-color: #f5f5f5;" text="Description" textFill="#19022c">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label fx:id="dateLabel" alignment="CENTER_RIGHT" layoutX="189.0" layoutY="58.0" prefHeight="17.0" prefWidth="203.0" text="Date Created" textFill="#1d0032" />
+      <ImageView fx:id="deleteButton" fitHeight="25.0" fitWidth="25.0" layoutX="374.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_delete.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.74" contrast="-0.86" hue="0.05" saturation="0.01" />
+         </effect>
+      </ImageView>
+      <ImageView fx:id="listUpdateButton" fitHeight="25.0" fitWidth="25.0" layoutX="339.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon_update.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="-0.74" contrast="-0.86" hue="0.05" saturation="0.01" />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

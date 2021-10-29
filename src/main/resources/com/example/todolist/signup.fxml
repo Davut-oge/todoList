@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #f3e5f5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignupController">
+   <children>
+      <AnchorPane prefHeight="62.0" prefWidth="701.0" style="-fx-background-color: #9c27b0;">
+         <children>
+            <Label alignment="CENTER" layoutX="292.0" layoutY="14.0" prefHeight="17.0" prefWidth="118.0" text="2DO" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="backButton" layoutX="631.0" layoutY="19.0" mnemonicParsing="false" style="-fx-background-color: #6a0080;" text="Back" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="100.0" layoutY="72.0" opacity="0.67" prefHeight="29.0" prefWidth="502.0" style="-fx-background-color: #9c27b0;">
+         <children>
+            <Label alignment="CENTER" layoutX="220.0" layoutY="1.0" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="signUpFirstName" layoutX="276.0" layoutY="118.0" promptText="First Name" />
+      <TextField fx:id="signUpLastName" layoutX="276.0" layoutY="158.0" promptText="Last Name" />
+      <TextField fx:id="signUpUserName" layoutX="276.0" layoutY="198.0" promptText="User Name" />
+      <TextField fx:id="signUpLocation" layoutX="276.0" layoutY="301.0" promptText="Location" />
+      <CheckBox fx:id="signUpCheckboxMale" layoutX="276.0" layoutY="274.0" mnemonicParsing="false" selected="true" text="Male" />
+      <CheckBox fx:id="signUpCheckboxFemale" layoutX="366.0" layoutY="274.0" mnemonicParsing="false" text="Female" />
+      <PasswordField fx:id="signUpPassword" layoutX="277.0" layoutY="234.0" promptText="Password" />
+      <Button fx:id="signUpButton" layoutX="322.0" layoutY="341.0" mnemonicParsing="false" style="-fx-background-color: #6a0080;" text="Sign Up" textFill="WHITE" />
+   </children>
+</AnchorPane>

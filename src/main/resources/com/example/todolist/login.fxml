@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #9c27b0;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <AnchorPane layoutY="72.0" prefHeight="328.0" prefWidth="700.0" style="-fx-background-color: #f3e5f5;">
+         <children>
+            <TextField fx:id="loginUsername" layoutX="177.0" layoutY="71.0" prefHeight="25.0" prefWidth="347.0" promptText="Username" />
+            <PasswordField fx:id="loginPassword" layoutX="176.0" layoutY="119.0" prefHeight="25.0" prefWidth="347.0" promptText="Password" />
+            <Label alignment="CENTER" layoutX="312.0" layoutY="30.0" prefHeight="17.0" prefWidth="76.0" text="Login" textFill="#7a7979f2" />
+            <Button fx:id="loginButton" alignment="CENTER" layoutX="297.0" layoutY="179.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="106.0" style="-fx-background-color: #4527a0;" text="Login" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="325.0" layoutY="25.0" text="2DO" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginSignupButton" layoutX="616.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #6a0080;" text="Sign Up" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateTaskController">
+   <children>
+      <AnchorPane prefHeight="74.0" prefWidth="400.0" style="-fx-background-color: #9c27b0;">
+         <children>
+            <Label layoutX="142.0" layoutY="22.0" text="2DO Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="updateTaskField" layoutX="60.0" layoutY="113.0" prefHeight="37.0" prefWidth="281.0" promptText="Task" />
+      <TextField fx:id="updateDescriptionField" layoutX="60.0" layoutY="161.0" prefHeight="37.0" prefWidth="281.0" promptText="Description" />
+      <Button fx:id="updateTaskButton" layoutX="148.0" layoutY="224.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="104.0" style="-fx-background-color: #9c27b0;" text="Update Task" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
